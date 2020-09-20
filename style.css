@@ -1,5 +1,89 @@
-.obsah {
-  color: #ffffff;
-  background-color: #283e50;
+html {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
 }
 
+.obsah {
+  position: relative;
+  top: 50px;
+  color: #ffffff;
+  background-color: #283e50;
+  border-radius: 3%;
+  height: 700px;
+  width: 480px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+.obrazek {
+  position: absolute;
+  height: 45%;
+  width: 100%;
+  top:0;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  margin: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+.tlacitka {
+  position: absolute;
+  top: 90%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border: 1 1 solid;
+}
+
+.tlacitka a{
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.pravidla a {
+  display: block;
+  text-align: center;
+  height: 40px;
+  background-color:#1fcca4;
+}
+.pravidla a:hover {
+  background-color:#1cbb96;
+}
+
+.zacithrat a {
+  display: block;
+  border-top: 2px solid #3f464d;
+  border-bottom: 2px solid #3f464d;
+  text-align: center;
+  height: 40px;
+  background-color:#0197f6;
+}
+.zacithrat a:hover {
+  background-color: #0090e9;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Lobster';
+}
+
+p {
+  font-size:1.3em;
+}
