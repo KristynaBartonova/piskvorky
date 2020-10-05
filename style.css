@@ -1,25 +1,26 @@
 html {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  display:flex;
-  justify-content: center;
+  min-height: 200vh;
   font-family: 'Open Sans', sans-serif;
 }
 
 .obsah {
   position: relative;
-  top: 50px;
+  align-items: center;
+  top: 30px;
+  left: 50px;
   color: #ffffff;
   background-color: #283e50;
   border-radius: 3%;
   height: 700px;
   width: 480px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  display:flex;
+  flex-direction: column;
+  flex-basis: 1 1 1;
 }
 .obrazek {
-  position: absolute;
   height: 45%;
   width: 100%;
   top:0;
@@ -28,48 +29,37 @@ html {
 }
 
 .text {
-  position: absolute;
-  top: 40%;
-  margin: 10px;
+  order:1;
   text-align: center;
-  padding: 30px;
+  height: 350px;
 }
 
-.tlacitka {
-  position: absolute;
-  top: 90%;
+.tlacitka{
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  order:2;
   width: 100%;
-  height: 200px;
-  margin: 0;
-  padding: 0;
-  border: 1 1 solid;
+  margin-left: -40px;
 }
 
 .tlacitka a{
   padding: 10px;
   text-decoration: none;
+  text-align: center;
   color: #ffffff;
   display:block;
-  justify-content: center;
-  align-items: center;
   font-size: 1em;
 }
 
-.pravidla a {
-  text-align: center;
+.pravidlahl a {
   height: 40px;
   background-color:#1fcca4;
 }
-.pravidla a:hover {
+.pravidlahl a:hover {
   background-color:#1cbb96;
 }
 
 .zacithrat a {
   border-top: 2px solid #3f464d;
-  text-align: center;
   height: 40px;
   background-color:#0197f6;
 }
@@ -84,4 +74,97 @@ h1 {
 
 p {
   font-size:1.3em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*--------stránka pravidla---------------*/
+
+.pravidla {
+  list-style-type: decimal;
+}
+
+.kontejner {
+  background-color: #283e50;
+  color:whitesmoke;
+  max-width: 70%;
+  border-radius: 7px 7px 0 0;
+  font-size:16px;
+  position:relative;
+  left: 70px;
+}
+.nadpis{
+  align-self:center;
+  font-style:italic;
+  text-align: center;
+}
+
+.pravimg {
+  margin:20px;
+  padding: 10px;
+}
+
+.tlacitka1{
+  width: 100%;
+  margin-left: -40px;
+}
+
+.tlacitka1 a{
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  display:block;
+  font-size: 1em;
+  padding:15px;
+}
+
+.pravidla1 a {
+  height: 40px;
+  background-color:#1fcca4;
+}
+.pravidla1 a:hover {
+  background-color:#1cbb96;
+}
+
+.zpetnastr a {
+  border-top: 2px solid #3f464d;
+  height: 40px;
+  background-color:#0197f6;
+}
+.zpetnastr a:hover {
+  background-color: #0090e9;
+}
+.pis{
+width: 100%;
+}
+
+.kolecko, .krizek {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+ol li {
+padding-top:5px;
+padding-bottom: 5px;
+}
+.kontejner p{
+  font-size: 16px;
+}
+ul{
+  list-style: none;
+  bottom:0;
+}
+@media screen and (min-width: 600px)
+{
+  .flexy{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+  .flexy div {
+    display: flex;
+    flex-basis: 40%;
+    padding:10px;
+  }
+  
 }
