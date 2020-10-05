@@ -90,17 +90,15 @@ p {
   border-radius: 7px 7px 0 0;
   font-size:16px;
   position:relative;
-  left: 70px;
+  left: 80px;
+  margin:10px;
 }
 .nadpis{
   align-self:center;
   font-style:italic;
   text-align: center;
-}
-
-.pravimg {
-  margin:20px;
-  padding: 10px;
+  padding-top: 20px;
+  margin:10px;
 }
 
 .tlacitka1{
@@ -118,20 +116,20 @@ p {
   padding:15px;
 }
 
-.pravidla1 a {
+.uvodnistr a {
   height: 40px;
   background-color:#1fcca4;
 }
-.pravidla1 a:hover {
+.uvodnistr a:hover {
   background-color:#1cbb96;
 }
 
-.zpetnastr a {
+.zacithrat a {
   border-top: 2px solid #3f464d;
   height: 40px;
   background-color:#0197f6;
 }
-.zpetnastr a:hover {
+.zacithrat a:hover {
   background-color: #0090e9;
 }
 .pis{
@@ -146,25 +144,43 @@ width: 100%;
 ol li {
 padding-top:5px;
 padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px;
 }
 .kontejner p{
   font-size: 16px;
 }
 ul{
   list-style: none;
-  bottom:0;
 }
+figcaption{
+  padding:5px;
+  font-size: 12px;
+  text-align: center;
+}
+
 @media screen and (min-width: 600px)
 {
   .flexy{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
+    justify-content:space-evenly;
   }
-  .flexy div {
-    display: flex;
-    flex-basis: 40%;
-    padding:10px;
+
+  .o1,.o2,.o3,.o4,.o5,.o6{
+display:flex;
+flex-direction: column;
+flex-basis: 45%;
+align-items: center;
   }
-  
+  figcaption{
+    font-size:15px;
+  }
+}
+
+@media screen and (min-width: 2000px)
+{.kontejner{
+  max-width:80%;
+}
 }
