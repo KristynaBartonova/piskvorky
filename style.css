@@ -184,7 +184,7 @@ align-items: center;
   max-width:80%;
 }
 }
-/* část Hra */
+/* --------- část Hra -------------- */
 .hrabody {
   display: flex;
   justify-content: center;
