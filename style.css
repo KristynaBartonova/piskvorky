@@ -184,3 +184,87 @@ align-items: center;
   max-width:80%;
 }
 }
+/* část Hra */
+.hrabody {
+  display: flex;
+  justify-content: center;
+  color:whitesmoke;
+}
+.hl_obsah {
+  max-width: 80vmin;
+}
+h1
+{
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: 1px solid black;
+  width:8vmin;
+  height:8vmin;
+  background-color: whitesmoke;
+  opacity: 0.4;
+}
+
+.hraci_policka {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px #6965bb;
+}
+
+button:focus,
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 229, 229, 0.7),
+    rgba(245, 229, 229, 0.7)
+  );
+}
+
+.hra {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.domecek {
+  background-color: #1fcca4;
+  margin-bottom: 1.5px;
+  border-radius: 10px;
+  position: absolute;
+  right: 50px;
+}
+
+.zahlavi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.domecek a:focus,
+.domecek a:hover {
+  background-color: #1cbb96;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.restart a:focus,
+.restart a:hover {
+  background-color: #0090e9;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.restart {
+  border-radius: 10px;
+  padding: 1px 6px;
+  margin-right: -3px;
+}
+
+.buttony {
+  position: relative;
+  padding: 2px 7px;
+}
