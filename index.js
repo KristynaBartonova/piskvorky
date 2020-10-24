@@ -3,10 +3,10 @@
 let natahu = 'circle';
 
 let hrac = document.querySelector('.hra');
-const buttons = document.querySelectorAll('button');
+const tlacitka = document.querySelectorAll('button');
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', (event) => {
+for (let i = 0; i < tlacitka.length; i++) {
+  tlacitka[i].addEventListener('click', (event) => {
     if (natahu === 'circle') {
       event.target.classList.toggle('board__field--circle');
       hrac.innerHTML = `hraje:
