@@ -273,19 +273,26 @@ button:hover {
 
 /*--------- javascript --------- */
 
-.inkonka{
+.kolecko {
   color: white;
-
 }
-
-.board__field--circle {
+.krizek {
+  color:white;
+}
+.circle {
   background-image: url(obrazek/circle.svg);
+  background-size:cover;
   background-repeat: no-repeat;
-  background-size: 2rem;}
+  background-size: 2rem;
+  background-origin: content-box;
+  color:white;}
 
 
-  .board__field--cross {
+.cross {
     background-image: url(obrazek/cross.svg);
+    color: white;
+    background-size:cover;
     background-repeat: no-repeat;
-  background-size:2rem;
+    background-size:2rem;
+    background-origin: content-box;
 }
