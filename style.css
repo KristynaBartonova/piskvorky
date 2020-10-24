@@ -270,3 +270,22 @@ button:hover {
   position: relative;
   padding: 2px 7px;
 }
+
+/*--------- javascript --------- */
+
+.inkonka{
+  color: white;
+
+}
+
+.board__field--circle {
+  background-image: url(obrazek/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem;}
+
+
+  .board__field--cross {
+    background-image: url(obrazek/cross.svg);
+    background-repeat: no-repeat;
+  background-size:2rem;
+}
