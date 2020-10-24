@@ -1,37 +1,24 @@
 'use strict';
 
 let natahu = 'circle';
-let hraje = document.querySelector('.hra');
-let tlacitko = document.querySelectorAll('button');
 
-for (let i = 0; i < tlacitko.length; i++) {
-  tlacitko[i].addEventListener('click', (event) => {
+let hrac = document.querySelector('.hra');
+const buttons = document.querySelectorAll('button');
 
-    switch(natahu){
-      case 'circle' : 
-        event.target.classList.toggle('board_field--circle');
-        hraje.innerHTML = `hraje:
-        <img class="ikonka" src="obrazek/cross.svg" alt="křížek" />`;
-        tlacitko[i].style.backgroundImage = "url('obrazek/circle.svg')";
-        tlacitko[i].style.backgroundRepeat = "no-repeat";
-        tlacitko[i].style.backgroundSize = "90px 90px";
-        tlacitko[i].style.backgroundPosition = "center";
-        event.target.setAttribute('disabled', true);
-        natahu = 'cross';
-        break;
-      case 'cross':
-        event.target.classList.toggle('board_field--cross');
-        hraje.innerHTML = ` hraje:
-        <img class="ikonka" src="obrazek/circle.svg" alt="kolečko" />`;
-        tlacitko[i].style.backgroundImage = "url('obrazek/cross.svg')";
-        tlacitko[i].style.backgroundRepeat = "no-repeat";
-        tlacitko[i].style.backgroundSize = "90px 90px";
-        tlacitko[i].style.backgroundPosition = "center";
-        event.target.setAttribute('disabled', true);
-        natahu = 'circle'; 
-        break;
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', (event) => {
+    if (natahu === 'circle') {
+      event.target.classList.toggle('board__field--circle');
+      hrac.innerHTML = `hraje:
+      <img class="ikonka" src="img/cross.svg" alt="křížek" />`;
+      natahu = 'cross';
+      event.target.setAttribute('disabled', true);
+    } else if (natahu === 'cross') {
+      event.target.classList.toggle('board__field--cross');
+      hrac.innerHTML = ` hraje:
+      <img class="ikonka" src="img/circle.svg" alt="kolečko" />`;
+      natahu = 'circle';
+      event.target.setAttribute('disabled', true);
     }
-  });}
-
-
-
+  });
+}
