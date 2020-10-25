@@ -285,6 +285,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: 2rem;
   background-origin: content-box;
+  background-position: center;
   color:white;}
 
 
@@ -295,4 +296,5 @@ button:hover {
     background-repeat: no-repeat;
     background-size:2rem;
     background-origin: content-box;
+    background-position: center;
 }
