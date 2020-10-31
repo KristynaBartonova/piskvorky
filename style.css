@@ -273,6 +273,10 @@ button:hover {
 
 /*--------- javascript --------- */
 
+canvas {
+  border: 2px solid black;
+  align-items: center;
+}
 .kolecko {
   color: white;
 }
