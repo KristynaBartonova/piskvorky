@@ -12,13 +12,15 @@ for (let i = 0; i < tlacitko.length; i++) {
       hrac.innerHTML = `hraje:
       <img class="ikonka" src="obrazek/cross.svg" alt="křížek" />`;
       natahu = 'cross';
-      event.target.setAttribute('disabled', true);
+			event.target.setAttribute('disabled', true);
+			vyhra(event.target);
     } else if (natahu === 'cross') {
       event.target.classList.toggle('board__field--cross');
       hrac.innerHTML = ` hraje:
       <img class="ikonka" src="obrazek/circle.svg" alt="kolečko" />`;
       natahu = 'circle';
-      event.target.setAttribute('disabled', true);
+			event.target.setAttribute('disabled', true);
+			vyhra(event.target);
     }
     else null;
   console.log('Get position', getPosition(tlacitko[i]));
@@ -110,10 +112,15 @@ const isWinningMove = (field) => {
 	return false
 }
 
-const vitezstvi = () => {
-  if (isWinningMove(tlacitko[i])===true && getSymbol(tlacitko[i])==='circle') {
-        return alert ('Gratulujeme kolečku k vítězství! Chcete rozdrtit křížek ještě jednou?');}
-      else if (isWinningMove(tlacitko[i])===true && getSymbol(tlacitko[i])==='cross'){
-        return alert ('Gratuluji křížku!');
-      };}
+const vyhra = (field) => {
+  if (isWinningMove(field)===true && getSymbol(field)==='circle') {
+				
+		setTimeout(() => alert ('Gratuluji kolečku k vítězství! Zkusíte to znovu?', 1000));
+		location.reload();
+			
+			} else if (isWinningMove(field)===true && getSymbol(field)==='cross'){
+
+				setTimeout(() => alert ('Gratuluji křížku!Zkusíte to znovu?',1000));
+				location.reload();
+      }};
 
